@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  4 11:16:50 2025
+# Process ID: 32148
+# Current directory: C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1
+# Command line: vivado.exe -log clk_wiz_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0_1.tcl
+# Log file: C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1.vds
+# Journal file: C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+source clk_wiz_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Super_Mario/super_mario/hdmi_tx_0_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado1/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 697dd9bed28154e7 to dir: C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/6/9/697dd9bed28154e7/clk_wiz_0_1.dcp to C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/6/9/697dd9bed28154e7/clk_wiz_0_1_sim_netlist.v to C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/6/9/697dd9bed28154e7/clk_wiz_0_1_sim_netlist.vhdl to C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/6/9/697dd9bed28154e7/clk_wiz_0_1_stub.v to C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/6/9/697dd9bed28154e7/clk_wiz_0_1_stub.vhdl to C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/clk_wiz_0_1_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_0_1, cache-ID = 697dd9bed28154e7.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 11:16:55 2025...

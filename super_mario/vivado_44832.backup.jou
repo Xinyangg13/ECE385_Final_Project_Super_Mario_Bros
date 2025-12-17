@@ -1,0 +1,157 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Dec  7 21:41:22 2025
+# Process ID: 44832
+# Current directory: C:/Super_Mario/super_mario
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent81104 C:\Super_Mario\super_mario\super_mario.xpr
+# Log file: C:/Super_Mario/super_mario/vivado.log
+# Journal file: C:/Super_Mario/super_mario\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Super_Mario/super_mario/super_mario.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
+set_property incremental_checkpoint {} [get_runs synth_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_1.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_2.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_4.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0
+set_property -dict [list \
+  CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} \
+  CONFIG.Input_Data_Width {8} \
+] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files c:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+generate_target all [get_files  c:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+catch { config_ip_cache -export [get_ips -all fifo_generator_0] }
+export_ip_user_files -of_objects [get_files c:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+launch_runs fifo_generator_0_synth_1 -jobs 24
+wait_on_run fifo_generator_0_synth_1
+export_simulation -of_objects [get_files c:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new
+close [ open {C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/module audio_controller_xess.sv} w ]
+add_files {{C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/module audio_controller_xess.sv}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top audio_controller_xess [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/pwm_audio_output.sv w ]
+add_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/pwm_audio_output.sv
+close [ open C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/sdcard_init.sv w ]
+add_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/sdcard_init.sv
+close [ open C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/audio_fifo_wrapper.sv w ]
+add_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/audio_fifo_wrapper.sv
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Super_Mario/super_mario/Common.vhd C:/Super_Mario/super_mario/SDCard.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property library work [get_files  C:/Super_Mario/super_mario/SDCard.vhd]
+set_property library xil_defaultlib [get_files  C:/Super_Mario/super_mario/SDCard.vhd]
+close [ open C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/mario_top_audio_xess.sv w ]
+add_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/new/mario_top_audio_xess.sv
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mario_top_audio_xess [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_10_demo_with_audio.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Super_Mario/super_mario/super_mario.runs/impl_1/mario_top_audio_xess.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+reset_run synth_1
+close_hw_manager
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_13_audio_work.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_14.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_15.xsa

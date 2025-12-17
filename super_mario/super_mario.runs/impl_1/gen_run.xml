@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1765383364">
+  <File Type="ROUTE-PWR" Name="mario_top_audio_xess_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mario_top_audio_xess.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="mario_top_audio_xess_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mario_top_audio_xess_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="mario_top_audio_xess.msk"/>
+  <File Type="ROUTE-CLK" Name="mario_top_audio_xess_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="mario_top_audio_xess.vdi"/>
+  <File Type="BG-BIT" Name="mario_top_audio_xess.bit"/>
+  <File Type="BG-DRC" Name="mario_top_audio_xess.drc"/>
+  <File Type="BG-BGN" Name="mario_top_audio_xess.bgn"/>
+  <File Type="BG-BIN" Name="mario_top_audio_xess.bin"/>
+  <File Type="BITSTR-RBT" Name="mario_top_audio_xess.rbt"/>
+  <File Type="BITSTR-NKY" Name="mario_top_audio_xess.nky"/>
+  <File Type="BITSTR-BMM" Name="mario_top_audio_xess_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mario_top_audio_xess.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mario_top_audio_xess_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="mario_top_audio_xess.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mario_top_audio_xess.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="mario_top_audio_xess_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mario_top_audio_xess.hwdef"/>
+  <File Type="PLACE-IO" Name="mario_top_audio_xess_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mario_top_audio_xess_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mario_top_audio_xess_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mario_top_audio_xess_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mario_top_audio_xess_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="mario_top_audio_xess_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mario_top_audio_xess_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mario_top_audio_xess_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mario_top_audio_xess_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mario_top_audio_xess_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="mario_top_audio_xess_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mario_top_audio_xess_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mario_top_audio_xess_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mario_top_audio_xess_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mario_top_audio_xess_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mario_top_audio_xess_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mario_top_audio_xess_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mario_top_audio_xess_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mario_top_audio_xess_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="mario_top_audio_xess_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="mario_top_audio_xess_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="mario_top_audio_xess_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mario_top_audio_xess_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="mario_top_audio_xess_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mario_top_audio_xess_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mario_top_audio_xess_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mario_top_audio_xess_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mario_top_audio_xess_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mario_top_audio_xess_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="mario_top_audio_xess.pdi"/>
+  <File Type="RCFI_FILE" Name="mario_top_audio_xess.rcfi"/>
+  <File Type="CFI_FILE" Name="mario_top_audio_xess.cfi"/>
+  <File Type="RNPI_FILE" Name="mario_top_audio_xess.rnpi"/>
+  <File Type="NPI_FILE" Name="mario_top_audio_xess.npi"/>
+  <File Type="RBD_FILE" Name="mario_top_audio_xess.rbd"/>
+  <File Type="ROUTE-RQS" Name="mario_top_audio_xess_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="mario_top_audio_xess_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/bd_mario/bd_mario.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/bd_mario/hdl/bd_mario_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/audio_fifo_wrapper.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/module audio_controller_xess.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pwm_audio_output.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sprite_roms.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Common.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/SDCard.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mario_top_audio_xess.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/super_mario_top_FIXED.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/vga_timing.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/simple_dvi_encoder.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/bd_mario/ip/bd_mario_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="bd_mario_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/bd_mario/ip/bd_mario_mig_7series_0_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="bd_mario_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/mario_sprites.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/tiles.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/enemies.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/level1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/hdmi_tx_0_1/hdmi_tx_0_1.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/enemy_sprite_rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/mario_sprite_rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/tile_sprite_rom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sprite_roms_FIXED.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sdcard_init.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mario_top_audio_xess"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/mario_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/mario_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="bd_mario_mig_7series_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_mario_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_mario_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_mario_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_mario_axi_gpio_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
+</GenRun>

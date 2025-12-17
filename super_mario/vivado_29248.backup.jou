@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  4 10:57:00 2025
+# Process ID: 29248
+# Current directory: C:/Super_Mario/super_mario
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32348 C:\Super_Mario\super_mario\super_mario.xpr
+# Log file: C:/Super_Mario/super_mario/vivado.log
+# Journal file: C:/Super_Mario/super_mario\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Super_Mario/super_mario/super_mario.xpr
+update_compile_order -fileset sources_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+reset_run clk_wiz_0_1_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+catch { config_ip_cache -export [get_ips -all enemy_sprite_rom] }
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+catch { config_ip_cache -export [get_ips -all mario_sprite_rom] }
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+catch { config_ip_cache -export [get_ips -all tile_sprite_rom] }
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+catch { config_ip_cache -export [get_ips -all tilemap_rom] }
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run bd_mario_mig_7series_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1

@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Dec  8 18:51:47 2025
+# Process ID: 113336
+# Current directory: C:/Super_Mario/super_mario
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent129280 C:\Super_Mario\super_mario\super_mario.xpr
+# Log file: C:/Super_Mario/super_mario/vivado.log
+# Journal file: C:/Super_Mario/super_mario\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Super_Mario/super_mario/super_mario.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_16_Perfect_Version.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_16.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_17.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_18.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_19.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_20.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:///mario_top_21.xsa

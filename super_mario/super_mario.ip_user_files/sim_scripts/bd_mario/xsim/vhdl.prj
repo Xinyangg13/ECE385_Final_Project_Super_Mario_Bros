@@ -1,0 +1,22 @@
+vhdl xil_defaultlib  \
+"../../../bd/bd_mario/ip/bd_mario_microblaze_0_0/sim/bd_mario_microblaze_0_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_microblaze_0_axi_intc_0/sim/bd_mario_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_mdm_1_0/sim/bd_mario_mdm_1_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_rst_mig_7series_0_83M_0/sim/bd_mario_rst_mig_7series_0_83M_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_axi_uartlite_0_0/sim/bd_mario_axi_uartlite_0_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_axi_timer_0_0/sim/bd_mario_axi_timer_0_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_axi_gpio_0_0/sim/bd_mario_axi_gpio_0_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_rst_clk_wiz_0_124M_1/sim/bd_mario_rst_clk_wiz_0_124M_1.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_spi_usb_0/sim/bd_mario_spi_usb_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_axi_gpio_2_0/sim/bd_mario_axi_gpio_2_0.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_axi_gpio_3_0/sim/bd_mario_axi_gpio_3_0.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/DVI_Constants.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/OutputSERDES.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/TMDS_Encoder.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/rgb2dvi.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/ClockGen.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/SyncAsync.vhd" \
+"../../../../super_mario.gen/sources_1/bd/bd_mario/ipshared/c873/src/SyncAsyncReset.vhd" \
+"../../../bd/bd_mario/ip/bd_mario_rgb2dvi_0_0/sim/bd_mario_rgb2dvi_0_0.vhd" \
+
+nosort

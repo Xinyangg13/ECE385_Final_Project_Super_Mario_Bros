@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Dec 10 10:17:45 2025
+# Process ID: 15712
+# Current directory: C:/Super_Mario/super_mario/super_mario.runs/synth_1
+# Command line: vivado.exe -log mario_top_audio_xess.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mario_top_audio_xess.tcl
+# Log file: C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top_audio_xess.vds
+# Journal file: C:/Super_Mario/super_mario/super_mario.runs/synth_1\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+source mario_top_audio_xess.tcl -notrace

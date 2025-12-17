@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  4 10:57:00 2025
+# Process ID: 29248
+# Current directory: C:/Super_Mario/super_mario
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32348 C:\Super_Mario\super_mario\super_mario.xpr
+# Log file: C:/Super_Mario/super_mario/vivado.log
+# Journal file: C:/Super_Mario/super_mario\vivado.jou
+# Running On: Taurus, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 24, Host memory: 33777 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Super_Mario/super_mario/super_mario.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/vivado1/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'E:/Super_Mario/super_mario' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Super_Mario/super_mario/hdmi_tx_0_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado1/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1356.117 ; gain = 381.762
+update_compile_order -fileset sources_1
+reset_run bd_mario_mig_7series_0_0_synth_1
+reset_run clk_wiz_0_1_synth_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Super_Mario/super_mario/super_mario.srcs/utils_1/imports/synth_1/mario_top.dcp with file C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top.dcp
+launch_runs impl_1 -jobs 24
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0_1'...
+[Thu Dec  4 11:16:49 2025] Launched bd_mario_mig_7series_0_0_synth_1, clk_wiz_0_1_synth_1, synth_1...
+Run output will be captured here:
+bd_mario_mig_7series_0_0_synth_1: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+clk_wiz_0_1_synth_1: C:/Super_Mario/super_mario/super_mario.runs/clk_wiz_0_1_synth_1/runme.log
+synth_1: C:/Super_Mario/super_mario/super_mario.runs/synth_1/runme.log
+[Thu Dec  4 11:16:49 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Super_Mario/super_mario/super_mario.srcs/utils_1/imports/synth_1/mario_top.dcp with file C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top.dcp
+launch_runs impl_1 -jobs 24
+[Thu Dec  4 12:21:25 2025] Launched bd_mario_mig_7series_0_0_synth_1, synth_1...
+Run output will be captured here:
+bd_mario_mig_7series_0_0_synth_1: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+synth_1: C:/Super_Mario/super_mario/super_mario.runs/synth_1/runme.log
+[Thu Dec  4 12:21:25 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'enemy_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'enemy_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'enemy_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'enemy_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'enemy_sprite_rom'...
+catch { config_ip_cache -export [get_ips -all enemy_sprite_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: enemy_sprite_rom
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 113b64b46b102de8 to dir: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/1/1/113b64b46b102de8/enemy_sprite_rom.dcp to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/1/1/113b64b46b102de8/enemy_sprite_rom_sim_netlist.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/1/1/113b64b46b102de8/enemy_sprite_rom_sim_netlist.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/1/1/113b64b46b102de8/enemy_sprite_rom_stub.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/1/1/113b64b46b102de8/enemy_sprite_rom_stub.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP enemy_sprite_rom, cache-ID = 113b64b46b102de8; cache size = 132.818 MB.
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci'
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/enemy_sprite_rom/enemy_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mario_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mario_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mario_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mario_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mario_sprite_rom'...
+catch { config_ip_cache -export [get_ips -all mario_sprite_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mario_sprite_rom
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry c36f209c58892ea7 to dir: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/c/3/c36f209c58892ea7/mario_sprite_rom.dcp to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/c/3/c36f209c58892ea7/mario_sprite_rom_sim_netlist.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/c/3/c36f209c58892ea7/mario_sprite_rom_sim_netlist.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/c/3/c36f209c58892ea7/mario_sprite_rom_stub.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/c/3/c36f209c58892ea7/mario_sprite_rom_stub.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/mario_sprite_rom/mario_sprite_rom_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mario_sprite_rom, cache-ID = c36f209c58892ea7; cache size = 132.818 MB.
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci'
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/mario_sprite_rom/mario_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'tile_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'tile_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'tile_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'tile_sprite_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'tile_sprite_rom'...
+catch { config_ip_cache -export [get_ips -all tile_sprite_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tile_sprite_rom
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d6d6018dac4d35b1 to dir: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/d/6/d6d6018dac4d35b1/tile_sprite_rom.dcp to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/d/6/d6d6018dac4d35b1/tile_sprite_rom_sim_netlist.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/d/6/d6d6018dac4d35b1/tile_sprite_rom_sim_netlist.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/d/6/d6d6018dac4d35b1/tile_sprite_rom_stub.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/d/6/d6d6018dac4d35b1/tile_sprite_rom_stub.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tile_sprite_rom/tile_sprite_rom_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP tile_sprite_rom, cache-ID = d6d6018dac4d35b1; cache size = 132.818 MB.
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci'
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tile_sprite_rom/tile_sprite_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+export_ip_user_files -of_objects  [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'tilemap_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'tilemap_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'tilemap_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'tilemap_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'tilemap_rom'...
+catch { config_ip_cache -export [get_ips -all tilemap_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: tilemap_rom
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry fd38cac18c9686e8 to dir: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/f/d/fd38cac18c9686e8/tilemap_rom.dcp to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/f/d/fd38cac18c9686e8/tilemap_rom_sim_netlist.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/f/d/fd38cac18c9686e8/tilemap_rom_sim_netlist.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/f/d/fd38cac18c9686e8/tilemap_rom_stub.v to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Super_Mario/super_mario/super_mario.cache/ip/2022.2/f/d/fd38cac18c9686e8/tilemap_rom_stub.vhdl to c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Super_Mario/super_mario/super_mario.gen/sources_1/ip/tilemap_rom/tilemap_rom_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP tilemap_rom, cache-ID = fd38cac18c9686e8; cache size = 132.818 MB.
+export_ip_user_files -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci'
+export_simulation -of_objects [get_files C:/Super_Mario/super_mario/super_mario.srcs/sources_1/ip/tilemap_rom/tilemap_rom.xci] -directory C:/Super_Mario/super_mario/super_mario.ip_user_files/sim_scripts -ip_user_files_dir C:/Super_Mario/super_mario/super_mario.ip_user_files -ipstatic_source_dir C:/Super_Mario/super_mario/super_mario.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/modelsim} {questa=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/questa} {riviera=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/riviera} {activehdl=C:/Super_Mario/super_mario/super_mario.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run bd_mario_mig_7series_0_0_synth_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Super_Mario/super_mario/super_mario.srcs/utils_1/imports/synth_1/mario_top.dcp with file C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top.dcp
+launch_runs impl_1 -jobs 24
+[Thu Dec  4 13:26:52 2025] Launched bd_mario_mig_7series_0_0_synth_1, synth_1...
+Run output will be captured here:
+bd_mario_mig_7series_0_0_synth_1: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+synth_1: C:/Super_Mario/super_mario/super_mario.runs/synth_1/runme.log
+[Thu Dec  4 13:26:52 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Thu Dec  4 14:56:03 2025] Launched bd_mario_mig_7series_0_0_synth_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+[Thu Dec  4 14:56:04 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Super_Mario/super_mario/super_mario.srcs/utils_1/imports/synth_1/mario_top.dcp with file C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Thu Dec  4 16:22:44 2025] Launched bd_mario_mig_7series_0_0_synth_1, synth_1...
+Run output will be captured here:
+bd_mario_mig_7series_0_0_synth_1: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+synth_1: C:/Super_Mario/super_mario/super_mario.runs/synth_1/runme.log
+[Thu Dec  4 16:22:44 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Super_Mario/super_mario/super_mario.srcs/utils_1/imports/synth_1/mario_top.dcp with file C:/Super_Mario/super_mario/super_mario.runs/synth_1/mario_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Thu Dec  4 18:27:53 2025] Launched bd_mario_mig_7series_0_0_synth_1, synth_1...
+Run output will be captured here:
+bd_mario_mig_7series_0_0_synth_1: C:/Super_Mario/super_mario/super_mario.runs/bd_mario_mig_7series_0_0_synth_1/runme.log
+synth_1: C:/Super_Mario/super_mario/super_mario.runs/synth_1/runme.log
+[Thu Dec  4 18:27:54 2025] Launched impl_1...
+Run output will be captured here: C:/Super_Mario/super_mario/super_mario.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1716.859 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 21:49:46 2025...

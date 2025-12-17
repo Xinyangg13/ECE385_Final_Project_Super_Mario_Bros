@@ -1,0 +1,55 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+-- Date        : Thu Nov 20 00:23:50 2025
+-- Host        : Taurus running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               d:/Super_Mario/super_mario/super_mario.gen/sources_1/bd/bd_mario/ip/bd_mario_sprite_engine_0_0/bd_mario_sprite_engine_0_0_stub.vhdl
+-- Design      : bd_mario_sprite_engine_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7s50csga324-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity bd_mario_sprite_engine_0_0 is
+  Port ( 
+    clk : in STD_LOGIC;
+    vga_clk : in STD_LOGIC;
+    reset_n : in STD_LOGIC;
+    h_count : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    v_count : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    video_active : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC;
+    red : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    green : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    blue : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+
+end bd_mario_sprite_engine_0_0;
+
+architecture stub of bd_mario_sprite_engine_0_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "clk,vga_clk,reset_n,h_count[9:0],v_count[9:0],video_active,s_axi_awaddr[31:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[31:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,red[7:0],green[7:0],blue[7:0]";
+attribute X_CORE_INFO : string;
+attribute X_CORE_INFO of stub : architecture is "sprite_engine,Vivado 2022.2";
+begin
+end;
