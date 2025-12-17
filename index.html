@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Bros. FPGA Edition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        linear-gradient(135deg, #e52521 0%, #049cd8 50%, #43b047 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+        
+        .hero .course {
+            font-size: 1.1em;
+            opacity: 0.85;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .card h2 {
+            color: #e52521;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #fbd000;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #43b047;
+        }
+        
+        .feature h3 {
+            color: #049cd8;
+            margin-bottom: 10px;
+        }
+        
+        .feature ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .feature li::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #fbd000;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #e52521;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .controls-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .control-group h3 {
+            color: #049cd8;
+            margin-bottom: 15px;
+        }
+        
+        .key {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 2px;
+            min-width: 35px;
+            text-align: center;
+        }
+        
+        .authors {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .authors h3 {
+            color: #049cd8;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #e52521;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn.secondary {
+            background: #049cd8;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        footer a {
+            color: #fbd000;
+        }
+        
+        .copyright {
+            background: #1a1a1a;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .tech-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .spec-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🎮 Super Mario Bros. FPGA Edition</h1>
+        <p class="subtitle">A Hardware Implementation in SystemVerilog</p>
+        <p class="course">ECE 385 Final Project - University of Illinois Urbana-Champaign - Fall 2025</p>
+        <div class="tech-specs">
+            <span class="spec-badge">60 FPS</span>
+            <span class="spec-badge">2-Player Mode</span>
+            <span class="spec-badge">5 Levels</span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>🕹️ Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Graphics & Display</h3>
+                    <ul>
+                        <li>640×480 @ 60Hz HDMI output</li>
+                        <li>Hardware sprite rendering</li>
+                        <li>Smooth camera scrolling</li>
+                        <li>Animated sprites</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>Gameplay</h3>
+                    <ul>
+                        <li>5 complete levels</li>
+                        <li>2-player cooperative mode</li>
+                        <li>Physics engine with gravity</li>
+                        <li>Collision detection</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>Power-Ups</h3>
+                    <ul>
+                        <li>Super Mushroom - Grow big</li>
+                        <li>Super Star - Invincibility</li>
+                        <li>Rainbow effect when powered</li>
+                        <li>Extra hit protection</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>Audio System</h3>
+                    <ul>
+                        <li>SD card music streaming</li>
+                        <li>22kHz 8-bit PCM audio</li>
+                        <li>PWM output</li>
+                        <li>Background music</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>👾 Enemies</h2>
+            <table>
+                <tr>
+                    <th>Enemy</th>
+                    <th>Description</th>
+                    <th>Can Stomp?</th>
+                </tr>
+                <tr>
+                    <td><strong>Goomba</strong></td>
+                    <td>Patrols left/right, classic enemy</td>
+                    <td>✅ Yes (+100 pts)</td>
+                </tr>
+                <tr>
+                    <td><strong>Koopa</strong></td>
+                    <td>Becomes fast-moving shell when stomped</td>
+                    <td>✅ Yes (creates shell)</td>
+                </tr>
+                <tr>
+                    <td><strong>Spiny</strong></td>
+                    <td>Has sharp spikes on top</td>
+                    <td>❌ No - avoid!</td>
+                </tr>
+                <tr>
+                    <td><strong>Flying</strong></td>
+                    <td>Moves in sinusoidal wave pattern</td>
+                    <td>✅ Yes (+150 pts)</td>
+                </tr>
+                <tr>
+                    <td><strong>Blocker</strong></td>
+                    <td>Stationary obstacle enemy</td>
+                    <td>✅ Yes (+50 pts)</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>🎹 Controls</h2>
+            <div class="controls-section">
+                <div class="control-group">
+                    <h3>Player 1 (Mario)</h3>
+                    <p><span class="key">W</span> Jump</p>
+                    <p><span class="key">A</span> Move Left</p>
+                    <p><span class="key">S</span> Crouch</p>
+                    <p><span class="key">D</span> Move Right</p>
+                </div>
+                <div class="control-group">
+                    <h3>Player 2 (Luigi)</h3>
+                    <p><span class="key">↑</span> Jump</p>
+                    <p><span class="key">←</span> Move Left</p>
+                    <p><span class="key">↓</span> Crouch</p>
+                    <p><span class="key">→</span> Move Right</p>
+                </div>
+                <div class="control-group">
+                    <h3>System</h3>
+                    <p><span class="key">Enter</span> Start / Confirm</p>
+                    <p><span class="key">P</span> Pause</p>
+                    <p><span class="key">Q</span> Quit to menu</p>
+                    <p><span class="key">R</span> Restart level</p>
+                </div>
+                <div class="control-group">
+                    <h3>Cheat Codes</h3>
+                    <p><span class="key">L</span> +3 Lives</p>
+                    <p><span class="key">H</span> Speed boost</p>
+                    <p><span class="key">I</span> God mode</p>
+                    <p><span class="key">N</span> Skip level</p>
+                    <p><span class="key">K</span> Kill all enemies</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="authors">
+                <h3>👨‍💻 Authors</h3>
+                <p><strong>Chen Zeng</strong> & <strong>Xinyang Liu</strong></p>
+                <p style="margin-top: 10px; color: #666;">
+                    ECE 385 - Fall 2025<br>
+                    University of Illinois Urbana-Champaign
+                </p>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/zengchentt-rgb/ECE385_Final_Project_Super_Mario_Bros" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Super Mario Bros. FPGA Edition</p>
+        <p style="margin-top: 10px;">
+            <a href="https://github.com/zengchentt-rgb/ECE385_Final_Project_Super_Mario_Bros">GitHub Repository</a>
+        </p>
+    </footer>
+    
+    <div class="copyright">
+        <p>© 2025 Chen Zeng and Xinyang Liu. All rights reserved.</p>
+        <p style="margin-top: 10px;">
+            This is a non-commercial educational project. 
+            Super Mario Bros. is a trademark of Nintendo Co., Ltd. 
+            This project is not affiliated with or endorsed by Nintendo.
+        </p>
+    </div>
+</body>
+</html>
