@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario Bros. FPGA Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,359 +14,738 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #5c94fc;
             min-height: 100vh;
-            color: #333;
+            overflow-x: hidden;
         }
         
+        /* Pixel font for titles */
+        .pixel-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        /* Animated clouds */
+        .clouds {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50px;
+            animation: float-cloud 30s linear infinite;
+        }
+        
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        .cloud-1 {
+            width: 80px;
+            height: 30px;
+            top: 10%;
+            left: -100px;
+            animation-duration: 25s;
+        }
+        .cloud-1::before { width: 40px; height: 40px; top: -20px; left: 15px; }
+        .cloud-1::after { width: 30px; height: 30px; top: -15px; left: 45px; }
+        
+        .cloud-2 {
+            width: 100px;
+            height: 35px;
+            top: 20%;
+            left: -120px;
+            animation-duration: 35s;
+            animation-delay: 5s;
+        }
+        .cloud-2::before { width: 50px; height: 50px; top: -25px; left: 20px; }
+        .cloud-2::after { width: 35px; height: 35px; top: -18px; left: 55px; }
+        
+        .cloud-3 {
+            width: 70px;
+            height: 25px;
+            top: 5%;
+            left: -90px;
+            animation-duration: 40s;
+            animation-delay: 10s;
+        }
+        .cloud-3::before { width: 35px; height: 35px; top: -18px; left: 12px; }
+        .cloud-3::after { width: 25px; height: 25px; top: -12px; left: 40px; }
+        
+        @keyframes float-cloud {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(100vw + 200px)); }
+        }
+        
+        /* Ground */
+        .ground {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: 
+                repeating-linear-gradient(
+                    90deg,
+                    #c84c0c 0px,
+                    #c84c0c 30px,
+                    #e09050 30px,
+                    #e09050 32px
+                );
+            z-index: 1;
+        }
+        
+        .ground::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #50a828;
+        }
+        
+        /* Brick pattern */
+        .bricks {
+            position: fixed;
+            bottom: 60px;
+            left: 0;
+            width: 100%;
+            height: 32px;
+            background: 
+                repeating-linear-gradient(
+                    90deg,
+                    #c84c0c 0px,
+                    #c84c0c 30px,
+                    #000 30px,
+                    #000 32px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    #c84c0c 0px,
+                    #c84c0c 14px,
+                    #000 14px,
+                    #000 16px
+                );
+            z-index: 1;
+        }
+        
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        linear-gradient(135deg, #e52521 0%, #049cd8 50%, #43b047 100%);
-            color: white;
+            position: relative;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px 80px;
+            z-index: 2;
         }
         
         .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.2em;
+            color: #fbd000;
+            text-shadow: 
+                4px 4px 0 #000,
+                -2px -2px 0 #e52521,
+                2px -2px 0 #e52521,
+                -2px 2px 0 #e52521;
+            margin-bottom: 20px;
+            animation: title-bounce 1s ease-in-out infinite;
+        }
+        
+        @keyframes title-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         
         .hero .subtitle {
-            font-size: 1.3em;
-            opacity: 0.95;
-            margin-bottom: 20px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7em;
+            color: white;
+            text-shadow: 2px 2px 0 #000;
+            margin-bottom: 15px;
         }
         
         .hero .course {
-            font-size: 1.1em;
-            opacity: 0.85;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5em;
+            color: #fbd000;
+            text-shadow: 2px 2px 0 #000;
         }
         
+        /* Question Block Badges */
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .q-block {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #fbd000 0%, #e5a000 100%);
+            border: 4px solid #000;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 
+                inset 3px 3px 0 #fff5aa,
+                inset -3px -3px 0 #b87800;
+            animation: block-shine 2s ease-in-out infinite;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        
+        .q-block:hover {
+            transform: translateY(-5px);
+        }
+        
+        .q-block:active {
+            transform: translateY(2px);
+        }
+        
+        .q-block span {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5em;
+            color: #000;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .q-block::before {
+            content: '?';
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.8em;
+            color: #000;
+            text-shadow: 2px 2px 0 #b87800;
+        }
+        
+        @keyframes block-shine {
+            0%, 100% { box-shadow: inset 3px 3px 0 #fff5aa, inset -3px -3px 0 #b87800; }
+            50% { box-shadow: inset 5px 5px 0 #fffacc, inset -3px -3px 0 #b87800; }
+        }
+        
+        /* Main Content */
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px 20px 150px;
+            position: relative;
+            z-index: 2;
         }
         
+        /* Pipe Section Divider */
+        .pipe {
+            width: 80px;
+            height: 60px;
+            background: linear-gradient(90deg, #00a800 0%, #50d850 30%, #00a800 70%, #006800 100%);
+            margin: 30px auto;
+            border-radius: 5px 5px 0 0;
+            position: relative;
+            border: 3px solid #000;
+            border-bottom: none;
+        }
+        
+        .pipe::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 20px;
+            background: linear-gradient(90deg, #00a800 0%, #50d850 30%, #00a800 70%, #006800 100%);
+            border: 3px solid #000;
+            border-radius: 5px;
+        }
+        
+        /* Card Styles - Brick Look */
         .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
+            background: linear-gradient(135deg, #e5a050 0%, #c84c0c 100%);
+            border: 4px solid #000;
+            border-radius: 10px;
+            padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            position: relative;
+            box-shadow: 
+                inset 3px 3px 0 #f0c090,
+                inset -3px -3px 0 #8b3000,
+                8px 8px 0 rgba(0,0,0,0.3);
         }
         
         .card h2 {
-            color: #e52521;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1em;
+            color: #fbd000;
+            text-shadow: 2px 2px 0 #000;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #fbd000;
+            text-align: center;
         }
         
+        .card-content {
+            background: rgba(255,255,255,0.95);
+            border-radius: 8px;
+            padding: 20px;
+            border: 3px solid #000;
+        }
+        
+        /* Feature Grid */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
         }
         
         .feature {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #43b047;
+            background: #5c94fc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid #000;
+            color: white;
         }
         
         .feature h3 {
-            color: #049cd8;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            color: #fbd000;
+            text-shadow: 1px 1px 0 #000;
             margin-bottom: 10px;
         }
         
         .feature ul {
             list-style: none;
-            padding-left: 0;
+            font-size: 0.85em;
         }
         
         .feature li {
-            padding: 5px 0;
+            padding: 4px 0;
             padding-left: 20px;
             position: relative;
         }
         
         .feature li::before {
-            content: "★";
+            content: "🍄";
             position: absolute;
             left: 0;
-            color: #fbd000;
+            font-size: 0.8em;
         }
         
+        /* Enemy Table */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
-        }
-        
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+            font-size: 0.9em;
         }
         
         th {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
             background: #e52521;
+            color: white;
+            padding: 12px 8px;
+            text-shadow: 1px 1px 0 #000;
+            border: 2px solid #000;
+        }
+        
+        td {
+            padding: 10px 8px;
+            border: 2px solid #000;
+            background: white;
+        }
+        
+        tr:nth-child(even) td {
+            background: #f0f0f0;
+        }
+        
+        /* Controls Section */
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        
+        .control-group {
+            background: #5c94fc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid #000;
             color: white;
         }
         
-        tr:hover {
-            background: #f5f5f5;
-        }
-        
-        .controls-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        
         .control-group h3 {
-            color: #049cd8;
-            margin-bottom: 15px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.55em;
+            color: #fbd000;
+            text-shadow: 1px 1px 0 #000;
+            margin-bottom: 12px;
+            text-align: center;
         }
         
         .key {
             display: inline-block;
             background: #333;
             color: white;
-            padding: 5px 12px;
-            border-radius: 5px;
-            font-family: monospace;
-            margin: 2px;
-            min-width: 35px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5em;
+            margin: 3px 0;
+            min-width: 30px;
             text-align: center;
+            border: 2px solid #000;
+            box-shadow: 0 3px 0 #000;
         }
         
-        .authors {
+        .key-arrow {
+            font-size: 0.9em;
+            font-family: Arial, sans-serif;
+            padding: 4px 10px;
+        }
+        
+        .control-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 8px 0;
+            font-size: 0.8em;
+        }
+        
+        /* Coin Counter Style Authors */
+        .authors-section {
             text-align: center;
-            padding: 20px;
+            color: white;
         }
         
-        .authors h3 {
-            color: #049cd8;
-            margin-bottom: 15px;
+        .coin-display {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            color: white;
+            text-shadow: 2px 2px 0 #000;
+            margin-bottom: 20px;
         }
         
-        .btn {
+        .coin {
             display: inline-block;
-            background: #e52521;
+            width: 20px;
+            height: 20px;
+            background: #fbd000;
+            border-radius: 50%;
+            border: 2px solid #b87800;
+            margin-right: 5px;
+            animation: coin-spin 1s linear infinite;
+        }
+        
+        @keyframes coin-spin {
+            0% { transform: scaleX(1); }
+            50% { transform: scaleX(0.3); }
+            100% { transform: scaleX(1); }
+        }
+        
+        .authors-names {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7em;
+            color: #fbd000;
+            text-shadow: 2px 2px 0 #000;
+            margin: 15px 0;
+        }
+        
+        .school-info {
+            font-size: 0.8em;
+            color: white;
+            text-shadow: 1px 1px 0 #000;
+        }
+        
+        /* GitHub Button - Flag Pole Style */
+        .btn-github {
+            display: inline-block;
+            background: linear-gradient(90deg, #50d850 0%, #00a800 100%);
             color: white;
             padding: 15px 30px;
-            border-radius: 30px;
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
-            margin: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            border: 3px solid #000;
+            margin-top: 20px;
+            box-shadow: 0 4px 0 #006800;
+            transition: transform 0.1s, box-shadow 0.1s;
+            text-shadow: 1px 1px 0 #000;
         }
         
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        .btn-github:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #006800;
         }
         
-        .btn.secondary {
-            background: #049cd8;
+        .btn-github:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #006800;
         }
         
+        /* Footer */
         footer {
-            background: #222;
+            background: #000;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
+            position: relative;
+            z-index: 3;
+            margin-bottom: 92px;
         }
         
-        footer a {
-            color: #fbd000;
+        footer p {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5em;
+            margin: 10px 0;
         }
         
         .copyright {
-            background: #1a1a1a;
-            color: #aaa;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
+            font-size: 0.7em;
+            color: #888;
+            margin-top: 15px;
+            font-family: 'Segoe UI', sans-serif;
         }
         
-        .tech-specs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
+        /* Mario Character */
+        .mario {
+            position: fixed;
+            bottom: 92px;
+            left: 50px;
+            width: 32px;
+            height: 32px;
+            z-index: 2;
+            animation: mario-walk 0.4s steps(2) infinite;
         }
         
-        .spec-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.2em;
+            }
+            .hero .subtitle {
+                font-size: 0.5em;
+            }
+            .hero .course {
+                font-size: 0.4em;
+            }
+            .q-block {
+                width: 60px;
+                height: 60px;
+            }
+            .q-block::before {
+                font-size: 1.2em;
+            }
+            .q-block span {
+                font-size: 0.35em;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Animated Clouds -->
+    <div class="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+    
+    <!-- Ground and Bricks -->
+    <div class="bricks"></div>
+    <div class="ground"></div>
+    
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>🎮 Super Mario Bros. FPGA Edition</h1>
+        <h1>🍄 SUPER MARIO BROS.<br>FPGA EDITION 🍄</h1>
         <p class="subtitle">A Hardware Implementation in SystemVerilog</p>
-        <p class="course">ECE 385 Final Project - University of Illinois Urbana-Champaign - Fall 2025</p>
-        <div class="tech-specs">
-            <span class="spec-badge">60 FPS</span>
-            <span class="spec-badge">2-Player Mode</span>
-            <span class="spec-badge">5 Levels</span>
+        <p class="course">ECE 385 - UIUC - FALL 2025</p>
+        
+        <!-- Question Block Badges -->
+        <div class="badges">
+            <div class="q-block"><span>60 FPS</span></div>
+            <div class="q-block"><span>2 PLAYER</span></div>
+            <div class="q-block"><span>5 LEVELS</span></div>
+            <div class="q-block"><span>AUDIO</span></div>
         </div>
     </div>
     
     <div class="container">
+        <!-- Pipe Divider -->
+        <div class="pipe"></div>
+        
+        <!-- Features Card -->
         <div class="card">
-            <h2>🕹️ Features</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>Graphics & Display</h3>
-                    <ul>
-                        <li>640×480 @ 60Hz HDMI output</li>
-                        <li>Hardware sprite rendering</li>
-                        <li>Smooth camera scrolling</li>
-                        <li>Animated sprites</li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <h3>Gameplay</h3>
-                    <ul>
-                        <li>5 complete levels</li>
-                        <li>2-player cooperative mode</li>
-                        <li>Physics engine with gravity</li>
-                        <li>Collision detection</li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <h3>Power-Ups</h3>
-                    <ul>
-                        <li>Super Mushroom - Grow big</li>
-                        <li>Super Star - Invincibility</li>
-                        <li>Rainbow effect when powered</li>
-                        <li>Extra hit protection</li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <h3>Audio System</h3>
-                    <ul>
-                        <li>SD card music streaming</li>
-                        <li>22kHz 8-bit PCM audio</li>
-                        <li>PWM output</li>
-                        <li>Background music</li>
-                    </ul>
+            <h2>⭐ FEATURES ⭐</h2>
+            <div class="card-content">
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>GRAPHICS</h3>
+                        <ul>
+                            <li>640×480 HDMI</li>
+                            <li>Hardware sprites</li>
+                            <li>Camera scroll</li>
+                            <li>Animations</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>GAMEPLAY</h3>
+                        <ul>
+                            <li>5 levels</li>
+                            <li>2P co-op mode</li>
+                            <li>Physics engine</li>
+                            <li>Collision detect</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>POWER-UPS</h3>
+                        <ul>
+                            <li>Super Mushroom</li>
+                            <li>Super Star</li>
+                            <li>Rainbow effect</li>
+                            <li>Extra hit</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>AUDIO</h3>
+                        <ul>
+                            <li>SD card music</li>
+                            <li>22kHz PCM</li>
+                            <li>PWM output</li>
+                            <li>Background BGM</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         
+        <!-- Pipe Divider -->
+        <div class="pipe"></div>
+        
+        <!-- Enemies Card -->
         <div class="card">
-            <h2>👾 Enemies</h2>
-            <table>
-                <tr>
-                    <th>Enemy</th>
-                    <th>Description</th>
-                    <th>Can Stomp?</th>
-                </tr>
-                <tr>
-                    <td><strong>Goomba</strong></td>
-                    <td>Patrols left/right, classic enemy</td>
-                    <td>✅ Yes (+100 pts)</td>
-                </tr>
-                <tr>
-                    <td><strong>Koopa</strong></td>
-                    <td>Becomes fast-moving shell when stomped</td>
-                    <td>✅ Yes (creates shell)</td>
-                </tr>
-                <tr>
-                    <td><strong>Spiny</strong></td>
-                    <td>Has sharp spikes on top</td>
-                    <td>❌ No - avoid!</td>
-                </tr>
-                <tr>
-                    <td><strong>Flying</strong></td>
-                    <td>Moves in sinusoidal wave pattern</td>
-                    <td>✅ Yes (+150 pts)</td>
-                </tr>
-                <tr>
-                    <td><strong>Blocker</strong></td>
-                    <td>Stationary obstacle enemy</td>
-                    <td>✅ Yes (+50 pts)</td>
-                </tr>
-            </table>
+            <h2>👾 ENEMIES 👾</h2>
+            <div class="card-content">
+                <table>
+                    <tr>
+                        <th>ENEMY</th>
+                        <th>DESCRIPTION</th>
+                        <th>STOMP?</th>
+                    </tr>
+                    <tr>
+                        <td>🍄 <strong>Goomba</strong></td>
+                        <td>Patrols left/right</td>
+                        <td>✅ +100</td>
+                    </tr>
+                    <tr>
+                        <td>🐢 <strong>Koopa</strong></td>
+                        <td>Becomes shell</td>
+                        <td>✅ Shell</td>
+                    </tr>
+                    <tr>
+                        <td>🦔 <strong>Spiny</strong></td>
+                        <td>Sharp spikes!</td>
+                        <td>❌ Avoid!</td>
+                    </tr>
+                    <tr>
+                        <td>🦅 <strong>Flying</strong></td>
+                        <td>Wave pattern</td>
+                        <td>✅ +150</td>
+                    </tr>
+                    <tr>
+                        <td>🧱 <strong>Blocker</strong></td>
+                        <td>Stationary</td>
+                        <td>✅ +50</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         
+        <!-- Pipe Divider -->
+        <div class="pipe"></div>
+        
+        <!-- Controls Card -->
         <div class="card">
-            <h2>🎹 Controls</h2>
-            <div class="controls-section">
-                <div class="control-group">
-                    <h3>Player 1 (Mario)</h3>
-                    <p><span class="key">W</span> Jump</p>
-                    <p><span class="key">A</span> Move Left</p>
-                    <p><span class="key">S</span> Crouch</p>
-                    <p><span class="key">D</span> Move Right</p>
-                </div>
-                <div class="control-group">
-                    <h3>Player 2 (Luigi)</h3>
-                    <p><span class="key">↑</span> Jump</p>
-                    <p><span class="key">←</span> Move Left</p>
-                    <p><span class="key">↓</span> Crouch</p>
-                    <p><span class="key">→</span> Move Right</p>
-                </div>
-                <div class="control-group">
-                    <h3>System</h3>
-                    <p><span class="key">Enter</span> Start / Confirm</p>
-                    <p><span class="key">P</span> Pause</p>
-                    <p><span class="key">Q</span> Quit to menu</p>
-                    <p><span class="key">R</span> Restart level</p>
-                </div>
-                <div class="control-group">
-                    <h3>Cheat Codes</h3>
-                    <p><span class="key">L</span> +3 Lives</p>
-                    <p><span class="key">H</span> Speed boost</p>
-                    <p><span class="key">I</span> God mode</p>
-                    <p><span class="key">N</span> Skip level</p>
-                    <p><span class="key">K</span> Kill all enemies</p>
+            <h2>🎮 CONTROLS 🎮</h2>
+            <div class="card-content">
+                <div class="controls-grid">
+                    <div class="control-group">
+                        <h3>PLAYER 1</h3>
+                        <div class="control-item"><span class="key">W</span> Jump</div>
+                        <div class="control-item"><span class="key">A</span> Left</div>
+                        <div class="control-item"><span class="key">S</span> Crouch</div>
+                        <div class="control-item"><span class="key">D</span> Right</div>
+                    </div>
+                    <div class="control-group">
+                        <h3>PLAYER 2</h3>
+                        <div class="control-item"><span class="key key-arrow">↑</span> Jump</div>
+                        <div class="control-item"><span class="key key-arrow">←</span> Left</div>
+                        <div class="control-item"><span class="key key-arrow">↓</span> Crouch</div>
+                        <div class="control-item"><span class="key key-arrow">→</span> Right</div>
+                    </div>
+                    <div class="control-group">
+                        <h3>SYSTEM</h3>
+                        <div class="control-item"><span class="key">ENTER</span> Start</div>
+                        <div class="control-item"><span class="key">P</span> Pause</div>
+                        <div class="control-item"><span class="key">Q</span> Quit</div>
+                        <div class="control-item"><span class="key">R</span> Restart</div>
+                    </div>
+                    <div class="control-group">
+                        <h3>CHEATS</h3>
+                        <div class="control-item"><span class="key">L</span> +3 Lives</div>
+                        <div class="control-item"><span class="key">H</span> Speed</div>
+                        <div class="control-item"><span class="key">I</span> God mode</div>
+                        <div class="control-item"><span class="key">N</span> Skip lvl</div>
+                    </div>
                 </div>
             </div>
         </div>
         
+        <!-- Pipe Divider -->
+        <div class="pipe"></div>
+        
+        <!-- Authors Card -->
         <div class="card">
-            <div class="authors">
-                <h3>👨‍💻 Authors</h3>
-                <p><strong>Chen Zeng</strong> & <strong>Xinyang Liu</strong></p>
-                <p style="margin-top: 10px; color: #666;">
-                    ECE 385 - Fall 2025<br>
-                    University of Illinois Urbana-Champaign
-                </p>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/zengchentt-rgb/ECE385_Final_Project_Super_Mario_Bros" class="btn">View on GitHub</a>
+            <h2>🏆 CREDITS 🏆</h2>
+            <div class="card-content">
+                <div class="authors-section">
+                    <div class="coin-display">
+                        <span class="coin"></span> WORLD 1-1 COMPLETE <span class="coin"></span>
+                    </div>
+                    <div class="authors-names">
+                        CHEN ZENG & XINYANG LIU
+                    </div>
+                    <div class="school-info">
+                        ECE 385 - Fall 2025<br>
+                        University of Illinois Urbana-Champaign
+                    </div>
+                    <a href="https://github.com/zengchentt-rgb/ECE385_Final_Project_Super_Mario_Bros" class="btn-github">
+                        🚩 VIEW ON GITHUB 🚩
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     
+    <!-- Footer -->
     <footer>
-        <p>Super Mario Bros. FPGA Edition</p>
-        <p style="margin-top: 10px;">
-            <a href="https://github.com/zengchentt-rgb/ECE385_Final_Project_Super_Mario_Bros">GitHub Repository</a>
-        </p>
-    </footer>
-    
-    <div class="copyright">
-        <p>© 2025 Chen Zeng and Xinyang Liu. All rights reserved.</p>
-        <p style="margin-top: 10px;">
-            This is a non-commercial educational project. 
-            Super Mario Bros. is a trademark of Nintendo Co., Ltd. 
+        <p>© 2025 CHEN ZENG & XINYANG LIU</p>
+        <p>ALL RIGHTS RESERVED</p>
+        <div class="copyright">
+            This is a non-commercial educational project for ECE 385 at UIUC.<br>
+            Super Mario Bros. is a trademark of Nintendo Co., Ltd.<br>
             This project is not affiliated with or endorsed by Nintendo.
-        </p>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
