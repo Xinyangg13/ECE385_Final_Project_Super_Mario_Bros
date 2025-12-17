@@ -60,6 +60,16 @@ A fully-functional Super Mario Bros. clone implemented in SystemVerilog on the U
 | Q | Quit to menu |
 | R | Restart level |
 
+### Cheat Codes
+
+| Key | Effect |
+|-----|--------|
+| L | +3 Lives (both players) |
+| H | Toggle speed boost |
+| I | Toggle god mode (invincibility) |
+| N | Skip to next level |
+| K | Kill all enemies on screen |
+
 ---
 
 ## Authors
