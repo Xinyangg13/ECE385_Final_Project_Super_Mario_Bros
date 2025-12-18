@@ -306,6 +306,33 @@
             display: block;
         }
         
+        .video-link {
+            display: block;
+            position: relative;
+            text-decoration: none;
+        }
+        
+        .video-link:hover .play-button {
+            background: #e52521;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #fbd000;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            border: 3px solid #fbd000;
+            transition: all 0.3s;
+            text-shadow: 2px 2px 0 #000;
+        }
+        
         .card-content {
             background: rgba(255,255,255,0.95);
             border-radius: 8px;
@@ -506,6 +533,31 @@
             box-shadow: 0 2px 0 #006800;
         }
         
+        .btn-youtube {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7em;
+            border: 3px solid #000;
+            box-shadow: 0 4px 0 #800000;
+            transition: transform 0.1s, box-shadow 0.1s;
+            text-shadow: 1px 1px 0 #000;
+        }
+        
+        .btn-youtube:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #800000;
+        }
+        
+        .btn-youtube:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #800000;
+        }
+        
         /* Footer */
         footer {
             background: #000;
@@ -596,18 +648,14 @@
         <!-- Demo Video Section -->
         <div class="card">
             <h2>🎬 DEMO VIDEO 🎬</h2>
-            <div class="card-content">
-                <div class="video-container">
-                    <iframe 
-                        width="100%" 
-                        height="400" 
-                        src="https://www.youtube.com/embed/eTQfZaNZx5g" 
-                        title="Super Mario Bros FPGA Demo" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+            <div class="card-content" style="text-align: center; padding: 40px 20px;">
+                <div style="font-size: 4em; margin-bottom: 20px;">🎮</div>
+                <p style="font-family: 'Press Start 2P', cursive; font-size: 0.8em; color: #333; margin-bottom: 25px;">
+                    Watch our Super Mario Bros. FPGA<br>gameplay demonstration!
+                </p>
+                <a href="https://youtu.be/eTQfZaNZx5g" target="_blank" class="btn-youtube">
+                    ▶ WATCH ON YOUTUBE
+                </a>
             </div>
         </div>
         
